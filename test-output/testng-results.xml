@@ -1,49 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
+<testng-results ignored="0" total="35" passed="31" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-18T11:05:52 IST" name="Default suite" finished-at="2024-11-18T11:06:02 IST" duration-ms="9615">
+  <suite started-at="2024-12-25T21:53:56 IST" name="Default suite" finished-at="2024-12-25T21:57:58 IST" duration-ms="242895">
     <groups>
     </groups>
-    <test started-at="2024-11-18T11:05:52 IST" name="Default test" finished-at="2024-11-18T11:06:02 IST" duration-ms="9615">
-      <class name="global_logistics_automation.glolog_contact">
-        <test-method is-config="true" signature="navigate()[pri:0, instance:global_logistics_automation.glolog_contact@209775a9]" started-at="2024-11-18T11:05:52 IST" name="navigate" finished-at="2024-11-18T11:05:55 IST" duration-ms="2884" status="PASS">
+    <test started-at="2024-12-25T21:53:56 IST" name="Default test" finished-at="2024-12-25T21:57:58 IST" duration-ms="242895">
+      <class name="globallogistic.services">
+        <test-method is-config="true" signature="navigate()[pri:0, instance:globallogistic.services@85e6769]" started-at="2024-12-25T21:54:05 IST" name="navigate" finished-at="2024-12-25T21:54:07 IST" duration-ms="2018" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigate -->
-        <test-method signature="contact()[pri:0, instance:global_logistics_automation.glolog_contact@209775a9]" started-at="2024-11-18T11:05:55 IST" name="contact" finished-at="2024-11-18T11:05:57 IST" duration-ms="1623" status="PASS">
+        <test-method signature="services()[pri:1, instance:globallogistic.services@85e6769]" started-at="2024-12-25T21:54:07 IST" name="services" finished-at="2024-12-25T21:54:08 IST" duration-ms="854" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- contact -->
-        <test-method signature="mail()[pri:0, instance:global_logistics_automation.glolog_contact@209775a9]" started-at="2024-11-18T11:05:57 IST" name="mail" finished-at="2024-11-18T11:05:58 IST" duration-ms="804" status="PASS">
+        </test-method> <!-- services -->
+        <test-method signature="international_frieght()[pri:2, instance:globallogistic.services@85e6769]" started-at="2024-12-25T21:54:08 IST" name="international_frieght" finished-at="2024-12-25T21:54:19 IST" duration-ms="10721" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- mail -->
-        <test-method signature="map()[pri:0, instance:global_logistics_automation.glolog_contact@209775a9]" started-at="2024-11-18T11:05:58 IST" name="map" finished-at="2024-11-18T11:05:58 IST" duration-ms="296" status="FAIL">
-          <exception class="org.openqa.selenium.InvalidSelectorException">
+        </test-method> <!-- international_frieght -->
+        <test-method signature="air_frieght()[pri:3, instance:globallogistic.services@85e6769]" started-at="2024-12-25T21:54:19 IST" name="air_frieght" finished-at="2024-12-25T21:54:19 IST" duration-ms="330" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[invalid selector
-from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression //[title=@\"Zoom in\"] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//[title=@\"Zoom in\"]' is not a valid XPath expression."}
-  (Session info: chrome=131.0.6778.69)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'flex_column av_one_half av-animated-generic bottom-to-top flex_column_div av-zero-column-padding avia-builder-el-7 el_after_av_one_half el_before_av_one_half avia_start_animation avia_start_delayed_animation')]//span[contains(@class,'image-overlay overlay-type-extern')]"}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b52cad97b607aebb9c1b51e4dc0f629d, findElement {using=xpath, value=//[title=@"Zoom in"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64284}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64284/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b52cad97b607aebb9c1b51e4dc0f629d]]>
+Command: [1b8606bfc0c3d2dc19f6d89b7c81c42c, findElement {value=//div[contains(@class,'flex_column av_one_half av-animated-generic bottom-to-top flex_column_div av-zero-column-padding avia-builder-el-7 el_after_av_one_half el_before_av_one_half avia_start_animation avia_start_delayed_animation')]//span[contains(@class,'image-overlay overlay-type-extern')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\Samiksha\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61540}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61540/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1b8606bfc0c3d2dc19f6d89b7c81c42c]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector
-from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression //[title=@\"Zoom in\"] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//[title=@\"Zoom in\"]' is not a valid XPath expression."}
-  (Session info: chrome=131.0.6778.69)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'flex_column av_one_half av-animated-generic bottom-to-top flex_column_div av-zero-column-padding avia-builder-el-7 el_after_av_one_half el_before_av_one_half avia_start_animation avia_start_delayed_animation')]//span[contains(@class,'image-overlay overlay-type-extern')]"}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b52cad97b607aebb9c1b51e4dc0f629d, findElement {using=xpath, value=//[title=@"Zoom in"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64284}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64284/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b52cad97b607aebb9c1b51e4dc0f629d
+Command: [1b8606bfc0c3d2dc19f6d89b7c81c42c, findElement {value=//div[contains(@class,'flex_column av_one_half av-animated-generic bottom-to-top flex_column_div av-zero-column-padding avia-builder-el-7 el_after_av_one_half el_before_av_one_half avia_start_animation avia_start_delayed_animation')]//span[contains(@class,'image-overlay overlay-type-extern')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\Samiksha\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61540}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61540/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1b8606bfc0c3d2dc19f6d89b7c81c42c
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -53,12 +51,12 @@ at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpRespo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
 at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at global_logistics_automation.glolog_contact.map(glolog_contact.java:31)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at globallogistic.services.air_frieght(services.java:41)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -69,7 +67,7 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:739)
 at org.testng.TestRunner.run(TestRunner.java:614)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -87,31 +85,380 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- map -->
-        <test-method signature="message()[pri:0, instance:global_logistics_automation.glolog_contact@209775a9]" started-at="2024-11-18T11:05:58 IST" name="message" finished-at="2024-11-18T11:05:59 IST" duration-ms="344" status="PASS">
+        </test-method> <!-- air_frieght -->
+        <test-method signature="sea_frieght()[pri:4, instance:globallogistic.services@85e6769]" started-at="2024-12-25T21:54:19 IST" name="sea_frieght" finished-at="2024-12-25T21:54:19 IST" duration-ms="64" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'flex_column av_one_half av-animated-generic bottom-to-top flex_column_div av-zero-column-padding first avia-builder-el-12 el_after_av_one_half el_before_av_one_half column-top-margin avia_start_animation avia_start_delayed_animation')]//span[contains(@class,'image-overlay overlay-type-extern')]"}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1b8606bfc0c3d2dc19f6d89b7c81c42c, findElement {value=//div[contains(@class,'flex_column av_one_half av-animated-generic bottom-to-top flex_column_div av-zero-column-padding first avia-builder-el-12 el_after_av_one_half el_before_av_one_half column-top-margin avia_start_animation avia_start_delayed_animation')]//span[contains(@class,'image-overlay overlay-type-extern')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\Samiksha\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61540}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61540/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1b8606bfc0c3d2dc19f6d89b7c81c42c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'flex_column av_one_half av-animated-generic bottom-to-top flex_column_div av-zero-column-padding first avia-builder-el-12 el_after_av_one_half el_before_av_one_half column-top-margin avia_start_animation avia_start_delayed_animation')]//span[contains(@class,'image-overlay overlay-type-extern')]"}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1b8606bfc0c3d2dc19f6d89b7c81c42c, findElement {value=//div[contains(@class,'flex_column av_one_half av-animated-generic bottom-to-top flex_column_div av-zero-column-padding first avia-builder-el-12 el_after_av_one_half el_before_av_one_half column-top-margin avia_start_animation avia_start_delayed_animation')]//span[contains(@class,'image-overlay overlay-type-extern')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\Samiksha\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61540}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61540/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1b8606bfc0c3d2dc19f6d89b7c81c42c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at globallogistic.services.sea_frieght(services.java:49)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- message -->
-        <test-method signature="name()[pri:0, instance:global_logistics_automation.glolog_contact@209775a9]" started-at="2024-11-18T11:05:59 IST" name="name" finished-at="2024-11-18T11:05:59 IST" duration-ms="316" status="PASS">
+        </test-method> <!-- sea_frieght -->
+        <test-method signature="land_transportation()[pri:5, instance:globallogistic.services@85e6769]" started-at="2024-12-25T21:54:19 IST" name="land_transportation" finished-at="2024-12-25T21:54:19 IST" duration-ms="35" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'flex_column av_one_half av-animated-generic bottom-to-top flex_column_div av-zero-column-padding avia-builder-el-17 el_after_av_one_half el_before_av_one_half column-top-margin avia_start_animation avia_start_delayed_animation')]//span[contains(@class,'image-overlay overlay-type-extern')]"}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1b8606bfc0c3d2dc19f6d89b7c81c42c, findElement {value=//div[contains(@class,'flex_column av_one_half av-animated-generic bottom-to-top flex_column_div av-zero-column-padding avia-builder-el-17 el_after_av_one_half el_before_av_one_half column-top-margin avia_start_animation avia_start_delayed_animation')]//span[contains(@class,'image-overlay overlay-type-extern')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\Samiksha\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61540}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61540/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1b8606bfc0c3d2dc19f6d89b7c81c42c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'flex_column av_one_half av-animated-generic bottom-to-top flex_column_div av-zero-column-padding avia-builder-el-17 el_after_av_one_half el_before_av_one_half column-top-margin avia_start_animation avia_start_delayed_animation')]//span[contains(@class,'image-overlay overlay-type-extern')]"}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1b8606bfc0c3d2dc19f6d89b7c81c42c, findElement {value=//div[contains(@class,'flex_column av_one_half av-animated-generic bottom-to-top flex_column_div av-zero-column-padding avia-builder-el-17 el_after_av_one_half el_before_av_one_half column-top-margin avia_start_animation avia_start_delayed_animation')]//span[contains(@class,'image-overlay overlay-type-extern')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\Samiksha\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61540}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61540/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1b8606bfc0c3d2dc19f6d89b7c81c42c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at globallogistic.services.land_transportation(services.java:57)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- land_transportation -->
+        <test-method is-config="true" signature="close()[pri:0, instance:globallogistic.services@85e6769]" started-at="2024-12-25T21:57:58 IST" name="close" finished-at="2024-12-25T21:57:58 IST" duration-ms="449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- globallogistic.services -->
+      <class name="globallogistic.contact">
+        <test-method is-config="true" signature="navigate()[pri:0, instance:globallogistic.contact@e077866]" started-at="2024-12-25T21:54:01 IST" name="navigate" finished-at="2024-12-25T21:54:03 IST" duration-ms="1870" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigate -->
+        <test-method signature="contact()[pri:1, instance:globallogistic.contact@e077866]" started-at="2024-12-25T21:54:19 IST" name="contact" finished-at="2024-12-25T21:54:21 IST" duration-ms="1632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contact -->
+        <test-method signature="name()[pri:2, instance:globallogistic.contact@e077866]" started-at="2024-12-25T21:54:21 IST" name="name" finished-at="2024-12-25T21:54:21 IST" duration-ms="353" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- name -->
-        <test-method signature="number()[pri:0, instance:global_logistics_automation.glolog_contact@209775a9]" started-at="2024-11-18T11:05:59 IST" name="number" finished-at="2024-11-18T11:06:00 IST" duration-ms="805" status="PASS">
+        <test-method signature="email()[pri:3, instance:globallogistic.contact@e077866]" started-at="2024-12-25T21:54:21 IST" name="email" finished-at="2024-12-25T21:54:21 IST" duration-ms="395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- email -->
+        <test-method signature="number()[pri:4, instance:globallogistic.contact@e077866]" started-at="2024-12-25T21:54:21 IST" name="number" finished-at="2024-12-25T21:54:22 IST" duration-ms="344" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- number -->
-        <test-method signature="subject()[pri:0, instance:global_logistics_automation.glolog_contact@209775a9]" started-at="2024-11-18T11:06:00 IST" name="subject" finished-at="2024-11-18T11:06:00 IST" duration-ms="294" status="PASS">
+        <test-method signature="subject()[pri:5, instance:globallogistic.contact@e077866]" started-at="2024-12-25T21:54:22 IST" name="subject" finished-at="2024-12-25T21:54:22 IST" duration-ms="400" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- subject -->
-        <test-method signature="submit()[pri:0, instance:global_logistics_automation.glolog_contact@209775a9]" started-at="2024-11-18T11:06:00 IST" name="submit" finished-at="2024-11-18T11:06:02 IST" duration-ms="2034" status="PASS">
+        <test-method signature="message()[pri:6, instance:globallogistic.contact@e077866]" started-at="2024-12-25T21:54:22 IST" name="message" finished-at="2024-12-25T21:54:22 IST" duration-ms="201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- message -->
+        <test-method signature="submit()[pri:7, instance:globallogistic.contact@e077866]" started-at="2024-12-25T21:54:22 IST" name="submit" finished-at="2024-12-25T21:54:26 IST" duration-ms="3105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submit -->
-      </class> <!-- global_logistics_automation.glolog_contact -->
+        <test-method signature="go_back()[pri:8, instance:globallogistic.contact@e077866]" started-at="2024-12-25T21:54:26 IST" name="go_back" finished-at="2024-12-25T21:54:26 IST" duration-ms="422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- go_back -->
+        <test-method signature="email_globallogistic()[pri:9, instance:globallogistic.contact@e077866]" started-at="2024-12-25T21:54:26 IST" name="email_globallogistic" finished-at="2024-12-25T21:54:27 IST" duration-ms="1061" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- email_globallogistic -->
+        <test-method signature="zoom_in()[pri:10, instance:globallogistic.contact@e077866]" started-at="2024-12-25T21:54:27 IST" name="zoom_in" finished-at="2024-12-25T21:54:27 IST" duration-ms="421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- zoom_in -->
+        <test-method is-config="true" signature="close()[pri:0, instance:globallogistic.contact@e077866]" started-at="2024-12-25T21:57:57 IST" name="close" finished-at="2024-12-25T21:57:58 IST" duration-ms="497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- globallogistic.contact -->
+      <class name="globallogistic.careers">
+        <test-method is-config="true" signature="navigate()[pri:0, instance:globallogistic.careers@1c55f277]" started-at="2024-12-25T21:53:58 IST" name="navigate" finished-at="2024-12-25T21:54:01 IST" duration-ms="2401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigate -->
+        <test-method signature="careers()[pri:1, instance:globallogistic.careers@1c55f277]" started-at="2024-12-25T21:54:27 IST" name="careers" finished-at="2024-12-25T21:54:28 IST" duration-ms="821" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- careers -->
+        <test-method signature="your_name()[pri:2, instance:globallogistic.careers@1c55f277]" started-at="2024-12-25T21:54:28 IST" name="your_name" finished-at="2024-12-25T21:54:28 IST" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- your_name -->
+        <test-method signature="your_email()[pri:3, instance:globallogistic.careers@1c55f277]" started-at="2024-12-25T21:54:28 IST" name="your_email" finished-at="2024-12-25T21:54:29 IST" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- your_email -->
+        <test-method signature="contact_number()[pri:4, instance:globallogistic.careers@1c55f277]" started-at="2024-12-25T21:54:29 IST" name="contact_number" finished-at="2024-12-25T21:54:29 IST" duration-ms="152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contact_number -->
+        <test-method signature="upload_resume()[pri:5, instance:globallogistic.careers@1c55f277]" started-at="2024-12-25T21:54:29 IST" name="upload_resume" finished-at="2024-12-25T21:54:29 IST" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- upload_resume -->
+        <test-method signature="subject()[pri:6, instance:globallogistic.careers@1c55f277]" started-at="2024-12-25T21:54:29 IST" name="subject" finished-at="2024-12-25T21:54:29 IST" duration-ms="151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subject -->
+        <test-method signature="your_message()[pri:7, instance:globallogistic.careers@1c55f277]" started-at="2024-12-25T21:54:29 IST" name="your_message" finished-at="2024-12-25T21:54:29 IST" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- your_message -->
+        <test-method signature="send()[pri:8, instance:globallogistic.careers@1c55f277]" started-at="2024-12-25T21:54:29 IST" name="send" finished-at="2024-12-25T21:57:29 IST" duration-ms="180103" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[java.util.concurrent.TimeoutException
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0a9a6169a5dfc9a906621dd0a5adc836, clickElement {id=f.ACEA07B895203D7CE936903426E7D9D8.d.961E19DB569747B66395DBC9B67B0EA0.e.28}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\Samiksha\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61565}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61565/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0a9a6169a5dfc9a906621dd0a5adc836)] -> xpath: //input[@type="submit"]]
+Session ID: 0a9a6169a5dfc9a906621dd0a5adc836]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0a9a6169a5dfc9a906621dd0a5adc836, clickElement {id=f.ACEA07B895203D7CE936903426E7D9D8.d.961E19DB569747B66395DBC9B67B0EA0.e.28}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\Samiksha\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61565}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61565/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0a9a6169a5dfc9a906621dd0a5adc836)] -> xpath: //input[@type="submit"]]
+Session ID: 0a9a6169a5dfc9a906621dd0a5adc836
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:403)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:359)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at globallogistic.careers.send(careers.java:69)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:386)
+... 36 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- send -->
+        <test-method is-config="true" signature="close()[pri:0, instance:globallogistic.careers@1c55f277]" started-at="2024-12-25T21:57:52 IST" name="close" finished-at="2024-12-25T21:57:57 IST" duration-ms="5761" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- globallogistic.careers -->
+      <class name="globallogistic.homepage">
+        <test-method is-config="true" signature="navigate()[pri:0, instance:globallogistic.homepage@89ff02e]" started-at="2024-12-25T21:54:03 IST" name="navigate" finished-at="2024-12-25T21:54:05 IST" duration-ms="2172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigate -->
+        <test-method signature="who_weare()[pri:1, instance:globallogistic.homepage@89ff02e]" started-at="2024-12-25T21:57:29 IST" name="who_weare" finished-at="2024-12-25T21:57:30 IST" duration-ms="1078" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- who_weare -->
+        <test-method signature="logo()[pri:2, instance:globallogistic.homepage@89ff02e]" started-at="2024-12-25T21:57:30 IST" name="logo" finished-at="2024-12-25T21:57:31 IST" duration-ms="925" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logo -->
+        <test-method signature="what_wedo()[pri:3, instance:globallogistic.homepage@89ff02e]" started-at="2024-12-25T21:57:31 IST" name="what_wedo" finished-at="2024-12-25T21:57:34 IST" duration-ms="2706" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- what_wedo -->
+        <test-method signature="facebook_button()[pri:4, instance:globallogistic.homepage@89ff02e]" started-at="2024-12-25T21:57:34 IST" name="facebook_button" finished-at="2024-12-25T21:57:36 IST" duration-ms="2390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- facebook_button -->
+        <test-method signature="twitter_button()[pri:5, instance:globallogistic.homepage@89ff02e]" started-at="2024-12-25T21:57:36 IST" name="twitter_button" finished-at="2024-12-25T21:57:39 IST" duration-ms="2293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- twitter_button -->
+        <test-method signature="search_button()[pri:6, instance:globallogistic.homepage@89ff02e]" started-at="2024-12-25T21:57:39 IST" name="search_button" finished-at="2024-12-25T21:57:40 IST" duration-ms="1481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search_button -->
+        <test-method signature="land_transportation()[pri:7, instance:globallogistic.homepage@89ff02e]" started-at="2024-12-25T21:57:40 IST" name="land_transportation" finished-at="2024-12-25T21:57:46 IST" duration-ms="5344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- land_transportation -->
+        <test-method signature="air_freight()[pri:8, instance:globallogistic.homepage@89ff02e]" started-at="2024-12-25T21:57:46 IST" name="air_freight" finished-at="2024-12-25T21:57:46 IST" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- air_freight -->
+        <test-method signature="warehouse_packaging()[pri:9, instance:globallogistic.homepage@89ff02e]" started-at="2024-12-25T21:57:46 IST" name="warehouse_packaging" finished-at="2024-12-25T21:57:46 IST" duration-ms="136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- warehouse_packaging -->
+        <test-method signature="get_a_quote()[pri:10, instance:globallogistic.homepage@89ff02e]" started-at="2024-12-25T21:57:46 IST" name="get_a_quote" finished-at="2024-12-25T21:57:50 IST" duration-ms="3657" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_a_quote -->
+        <test-method signature="scroll_to_up()[pri:11, instance:globallogistic.homepage@89ff02e]" started-at="2024-12-25T21:57:50 IST" name="scroll_to_up" finished-at="2024-12-25T21:57:50 IST" duration-ms="149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scroll_to_up -->
+        <test-method is-config="true" signature="close()[pri:0, instance:globallogistic.homepage@89ff02e]" started-at="2024-12-25T21:57:58 IST" name="close" finished-at="2024-12-25T21:57:58 IST" duration-ms="228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- globallogistic.homepage -->
+      <class name="globallogistic.about">
+        <test-method is-config="true" signature="navigate()[pri:0, instance:globallogistic.about@138fe6ec]" started-at="2024-12-25T21:53:56 IST" name="navigate" finished-at="2024-12-25T21:53:58 IST" duration-ms="2587" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigate -->
+        <test-method signature="about()[pri:1, instance:globallogistic.about@138fe6ec]" started-at="2024-12-25T21:57:50 IST" name="about" finished-at="2024-12-25T21:57:51 IST" duration-ms="1128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- about -->
+        <test-method is-config="true" signature="close()[pri:0, instance:globallogistic.about@138fe6ec]" started-at="2024-12-25T21:57:51 IST" name="close" finished-at="2024-12-25T21:57:52 IST" duration-ms="634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- globallogistic.about -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
