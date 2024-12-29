@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="10" name="Test">
+    <classes>
+      <class name="global_logistic.globalistic_service"/>
+      <class name="global_logistic.globalistuc_about"/>
+      <class name="global_logistic.globalistic_home"/>
+      <class name="global_logistic.globalistic_contact"/>
+      <class name="global_logistic.Homepage"/>
+      <class name="global_logistic.globalistic_carrer"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
