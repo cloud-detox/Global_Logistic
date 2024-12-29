@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="global_logistics_automation.glolog_contact">
+      <class name="global_logistic.globalistic_contact">
         <methods>
-          <include name="map"/>
-          <include name="navigate"/>
+          <include name="contact"/>
+          <include name="quit"/>
         </methods>
-      </class> <!-- global_logistics_automation.glolog_contact -->
+      </class> <!-- global_logistic.globalistic_contact -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
