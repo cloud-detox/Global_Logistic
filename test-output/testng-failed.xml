@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="global_logistics_automation.glolog_contact">
+      <class name="testCases.TC001CareerTest">
         <methods>
-          <include name="map"/>
-          <include name="navigate"/>
+          <include name="setup"/>
+          <include name="verify_career"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- global_logistics_automation.glolog_contact -->
+      </class> <!-- testCases.TC001CareerTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
