@@ -3,9 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      
-      <class name="Global_Logistic.HomePage"/>
-      <class name="Global_Logistic.About"/>
+      <class name="FirstCry_FirstCry.LoginPage"/>
+      <class name="FirstCry_FirstCry.AddCart"/>
+      <class name="FirstCry_FirstCry.BillingAddress"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
