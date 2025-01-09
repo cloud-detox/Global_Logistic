@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>7/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>27/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 18 11:05:52 IST 2024</td>
+<td>Started on:</td><td>Wed Jan 08 23:55:49 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>9 seconds (9615 ms)</td>
+<tr><td>Total time:</td><td>48 seconds (48688 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,17 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='global_logistics_automation.glolog_contact.map()'><b>map</b><br>Test class: global_logistics_automation.glolog_contact</td>
-<td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector
-from javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;Unable to locate an element with the xpath expression //[title=@\&quot;Zoom in\&quot;] because of the following error:\nSyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//[title=@\&quot;Zoom in\&quot;]&apos; is not a valid XPath expression.&quot;}
-  (Session info: chrome=131.0.6778.69)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+<td title='global_logistic.globalHomePageTest.mapzoom()'><b>mapzoom</b><br>Test class: global_logistic.globalHomePageTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: target frame detached: received Inspector.detached event
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.264)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b52cad97b607aebb9c1b51e4dc0f629d, findElement {using=xpath, value=//[title=@&quot;Zoom in&quot;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64284}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64284/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b52cad97b607aebb9c1b51e4dc0f629d
+Command: [7ae5df0791d2ab07a75cb405c21c6ace, findElement {using=xpath, value=//button[@aria-label=&quot;Zoom in&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.264, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\HARSHS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61716/devtoo..., se:cdpVersion: 131.0.6778.264, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ae5df0791d2ab07a75cb405c21c6ace
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -96,12 +95,12 @@ Session ID: b52cad97b607aebb9c1b51e4dc0f629d
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
 	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at global_logistics_automation.glolog_contact.map(glolog_contact.java:31)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at global_logistic.globalHomePageTest.mapzoom(globalHomePageTest.java:174)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -112,7 +111,7 @@ Session ID: b52cad97b607aebb9c1b51e4dc0f629d
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at org.testng.TestRunner.privateRun(TestRunner.java:739)
 	at org.testng.TestRunner.run(TestRunner.java:614)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -128,17 +127,16 @@ Session ID: b52cad97b607aebb9c1b51e4dc0f629d
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace539240764", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace539240764'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector
-from javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;Unable to locate an element with the xpath expression //[title=@\&quot;Zoom in\&quot;] because of the following error:\nSyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//[title=@\&quot;Zoom in\&quot;]&apos; is not a valid XPath expression.&quot;}
-  (Session info: chrome=131.0.6778.69)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+</pre></div><a href='#' onClick='toggleBox("stack-trace1424439581", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1424439581'><pre>org.openqa.selenium.WebDriverException: target frame detached: received Inspector.detached event
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.264)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b52cad97b607aebb9c1b51e4dc0f629d, findElement {using=xpath, value=//[title=@&quot;Zoom in&quot;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64284}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64284/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b52cad97b607aebb9c1b51e4dc0f629d
+Command: [7ae5df0791d2ab07a75cb405c21c6ace, findElement {using=xpath, value=//button[@aria-label=&quot;Zoom in&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.264, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\HARSHS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61716/devtoo..., se:cdpVersion: 131.0.6778.264, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ae5df0791d2ab07a75cb405c21c6ace
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -148,12 +146,12 @@ Session ID: b52cad97b607aebb9c1b51e4dc0f629d
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
 	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at global_logistics_automation.glolog_contact.map(glolog_contact.java:31)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at global_logistic.globalHomePageTest.mapzoom(globalHomePageTest.java:174)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -164,7 +162,7 @@ Session ID: b52cad97b607aebb9c1b51e4dc0f629d
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at org.testng.TestRunner.privateRun(TestRunner.java:739)
 	at org.testng.TestRunner.run(TestRunner.java:614)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -181,8 +179,8 @@ Session ID: b52cad97b607aebb9c1b51e4dc0f629d
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>0</td>
-<td>global_logistics_automation.glolog_contact@209775a9</td></tr>
+<td>30</td>
+<td>global_logistic.globalHomePageTest@14dda234</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -193,40 +191,140 @@ Session ID: b52cad97b607aebb9c1b51e4dc0f629d
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='global_logistics_automation.glolog_contact.mail()'><b>mail</b><br>Test class: global_logistics_automation.glolog_contact</td>
+<td title='global_logistic.globalHomePageTest.searchname()'><b>searchname</b><br>Test class: global_logistic.globalHomePageTest</td>
 <td></td>
 <td>0</td>
-<td>global_logistics_automation.glolog_contact@209775a9</td></tr>
+<td>global_logistic.globalHomePageTest@14dda234</td></tr>
 <tr>
-<td title='global_logistics_automation.glolog_contact.name()'><b>name</b><br>Test class: global_logistics_automation.glolog_contact</td>
+<td title='global_logistic.globalHomePageTest.home()'><b>home</b><br>Test class: global_logistic.globalHomePageTest</td>
 <td></td>
 <td>0</td>
-<td>global_logistics_automation.glolog_contact@209775a9</td></tr>
+<td>global_logistic.globalHomePageTest@14dda234</td></tr>
 <tr>
-<td title='global_logistics_automation.glolog_contact.subject()'><b>subject</b><br>Test class: global_logistics_automation.glolog_contact</td>
+<td title='global_logistic.globalHomePageTest.whatwedo()'><b>whatwedo</b><br>Test class: global_logistic.globalHomePageTest</td>
 <td></td>
 <td>0</td>
-<td>global_logistics_automation.glolog_contact@209775a9</td></tr>
+<td>global_logistic.globalHomePageTest@14dda234</td></tr>
 <tr>
-<td title='global_logistics_automation.glolog_contact.contact()'><b>contact</b><br>Test class: global_logistics_automation.glolog_contact</td>
+<td title='global_logistic.globalHomePageTest.yournumber()'><b>yournumber</b><br>Test class: global_logistic.globalHomePageTest</td>
+<td></td>
+<td>0</td>
+<td>global_logistic.globalHomePageTest@14dda234</td></tr>
+<tr>
+<td title='global_logistic.globalHomePageTest.search()'><b>search</b><br>Test class: global_logistic.globalHomePageTest</td>
+<td></td>
+<td>0</td>
+<td>global_logistic.globalHomePageTest@14dda234</td></tr>
+<tr>
+<td title='global_logistic.globalHomePageTest.subject()'><b>subject</b><br>Test class: global_logistic.globalHomePageTest</td>
+<td></td>
+<td>0</td>
+<td>global_logistic.globalHomePageTest@14dda234</td></tr>
+<tr>
+<td title='global_logistic.globalHomePageTest.email()'><b>email</b><br>Test class: global_logistic.globalHomePageTest</td>
+<td></td>
+<td>0</td>
+<td>global_logistic.globalHomePageTest@14dda234</td></tr>
+<tr>
+<td title='global_logistic.globalHomePageTest.intfreight()'><b>intfreight</b><br>Test class: global_logistic.globalHomePageTest</td>
+<td></td>
+<td>0</td>
+<td>global_logistic.globalHomePageTest@14dda234</td></tr>
+<tr>
+<td title='global_logistic.globalHomePageTest.yourmessage()'><b>yourmessage</b><br>Test class: global_logistic.globalHomePageTest</td>
+<td></td>
+<td>0</td>
+<td>global_logistic.globalHomePageTest@14dda234</td></tr>
+<tr>
+<td title='global_logistic.globalHomePageTest.TW()'><b>TW</b><br>Test class: global_logistic.globalHomePageTest</td>
+<td></td>
+<td>0</td>
+<td>global_logistic.globalHomePageTest@14dda234</td></tr>
+<tr>
+<td title='global_logistic.globalHomePageTest.career()'><b>career</b><br>Test class: global_logistic.globalHomePageTest</td>
+<td></td>
+<td>0</td>
+<td>global_logistic.globalHomePageTest@14dda234</td></tr>
+<tr>
+<td title='global_logistic.globalHomePageTest.youremail()'><b>youremail</b><br>Test class: global_logistic.globalHomePageTest</td>
+<td></td>
+<td>0</td>
+<td>global_logistic.globalHomePageTest@14dda234</td></tr>
+<tr>
+<td title='global_logistic.globalHomePageTest.number()'><b>number</b><br>Test class: global_logistic.globalHomePageTest</td>
+<td></td>
+<td>0</td>
+<td>global_logistic.globalHomePageTest@14dda234</td></tr>
+<tr>
+<td title='global_logistic.globalHomePageTest.submit()'><b>submit</b><br>Test class: global_logistic.globalHomePageTest</td>
+<td></td>
+<td>4</td>
+<td>global_logistic.globalHomePageTest@14dda234</td></tr>
+<tr>
+<td title='global_logistic.globalHomePageTest.clicksearch()'><b>clicksearch</b><br>Test class: global_logistic.globalHomePageTest</td>
+<td></td>
+<td>0</td>
+<td>global_logistic.globalHomePageTest@14dda234</td></tr>
+<tr>
+<td title='global_logistic.globalHomePageTest.send()'><b>send</b><br>Test class: global_logistic.globalHomePageTest</td>
+<td></td>
+<td>0</td>
+<td>global_logistic.globalHomePageTest@14dda234</td></tr>
+<tr>
+<td title='global_logistic.globalHomePageTest.FB()'><b>FB</b><br>Test class: global_logistic.globalHomePageTest</td>
+<td></td>
+<td>0</td>
+<td>global_logistic.globalHomePageTest@14dda234</td></tr>
+<tr>
+<td title='global_logistic.globalHomePageTest.image()'><b>image</b><br>Test class: global_logistic.globalHomePageTest</td>
+<td></td>
+<td>0</td>
+<td>global_logistic.globalHomePageTest@14dda234</td></tr>
+<tr>
+<td title='global_logistic.globalHomePageTest.name()'><b>name</b><br>Test class: global_logistic.globalHomePageTest</td>
+<td></td>
+<td>0</td>
+<td>global_logistic.globalHomePageTest@14dda234</td></tr>
+<tr>
+<td title='global_logistic.globalHomePageTest.getquote()'><b>getquote</b><br>Test class: global_logistic.globalHomePageTest</td>
 <td></td>
 <td>1</td>
-<td>global_logistics_automation.glolog_contact@209775a9</td></tr>
+<td>global_logistic.globalHomePageTest@14dda234</td></tr>
 <tr>
-<td title='global_logistics_automation.glolog_contact.message()'><b>message</b><br>Test class: global_logistics_automation.glolog_contact</td>
+<td title='global_logistic.globalHomePageTest.landtransportation()'><b>landtransportation</b><br>Test class: global_logistic.globalHomePageTest</td>
 <td></td>
 <td>0</td>
-<td>global_logistics_automation.glolog_contact@209775a9</td></tr>
+<td>global_logistic.globalHomePageTest@14dda234</td></tr>
 <tr>
-<td title='global_logistics_automation.glolog_contact.number()'><b>number</b><br>Test class: global_logistics_automation.glolog_contact</td>
+<td title='global_logistic.globalHomePageTest.choosefile()'><b>choosefile</b><br>Test class: global_logistic.globalHomePageTest</td>
 <td></td>
 <td>0</td>
-<td>global_logistics_automation.glolog_contact@209775a9</td></tr>
+<td>global_logistic.globalHomePageTest@14dda234</td></tr>
 <tr>
-<td title='global_logistics_automation.glolog_contact.submit()'><b>submit</b><br>Test class: global_logistics_automation.glolog_contact</td>
+<td title='global_logistic.globalHomePageTest.message()'><b>message</b><br>Test class: global_logistic.globalHomePageTest</td>
 <td></td>
-<td>2</td>
-<td>global_logistics_automation.glolog_contact@209775a9</td></tr>
+<td>0</td>
+<td>global_logistic.globalHomePageTest@14dda234</td></tr>
+<tr>
+<td title='global_logistic.globalHomePageTest.yoursubject()'><b>yoursubject</b><br>Test class: global_logistic.globalHomePageTest</td>
+<td></td>
+<td>0</td>
+<td>global_logistic.globalHomePageTest@14dda234</td></tr>
+<tr>
+<td title='global_logistic.globalHomePageTest.contact()'><b>contact</b><br>Test class: global_logistic.globalHomePageTest</td>
+<td></td>
+<td>0</td>
+<td>global_logistic.globalHomePageTest@14dda234</td></tr>
+<tr>
+<td title='global_logistic.globalHomePageTest.whoweare()'><b>whoweare</b><br>Test class: global_logistic.globalHomePageTest</td>
+<td></td>
+<td>0</td>
+<td>global_logistic.globalHomePageTest@14dda234</td></tr>
+<tr>
+<td title='global_logistic.globalHomePageTest.yourname()'><b>yourname</b><br>Test class: global_logistic.globalHomePageTest</td>
+<td></td>
+<td>0</td>
+<td>global_logistic.globalHomePageTest@14dda234</td></tr>
 </table><p>
 </body>
 </html>
