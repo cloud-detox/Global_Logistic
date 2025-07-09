@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="global_logistics_automation.glolog_contact">
+      <class name="Test.Testglobal">
         <methods>
-          <include name="map"/>
-          <include name="navigate"/>
+          <include name="Testrun"/>
         </methods>
-      </class> <!-- global_logistics_automation.glolog_contact -->
+      </class> <!-- Test.Testglobal -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
